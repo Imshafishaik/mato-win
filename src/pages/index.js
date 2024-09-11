@@ -7,8 +7,8 @@ const MatowinPage = () => {
   return (
     <div>
       <Header />
-      {/* <Home />
-      <Footer /> */}
+       {/* <Home /> */}
+      <Footer />
     </div>
   )
 }
