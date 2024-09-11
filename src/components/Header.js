@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './Navbar';
 
 const Header = () => {
   return (
-    <div>
-      THis is header component
+    <div className='matowin_header'>
+      <div>
+        <Navbar />
+      </div>
     </div>
   )
 }
