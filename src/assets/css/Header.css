@@ -1,0 +1,31 @@
+.matowin_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 0 50px;
+    height: 100px;
+    border-radius: 0 0 25px 25px;
+}
+/* #EAF2F8; */
+.matowin_logo img{
+    height: 80px;
+    width: 110px;
+    display: flex;
+}
+
+@media screen and (max-width:991px){
+    .matowin_header{
+        padding: 0 20px;
+        height: 80px;
+        border-radius: 0 0 25px 25px;
+    }    
+
+    .matowin_logo img{
+        height: 65px;
+        width: 90px;
+        display: flex;
+    }
+    
+    
+}

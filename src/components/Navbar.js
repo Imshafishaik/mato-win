@@ -1,68 +1,35 @@
 import React, { useState } from 'react';
 import "../assets/css/Navbar.css";
-import Logo from "../assets/images/matowinlogo.jpeg";
 import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState("");
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-    setMenuOpen(false);
-  };
-
+    const [isMenu,setIsMenu] = useState(false);
   return (
-    <nav className="navbar">
-      <div className="navbar-logo">
-        <a href="/">
-          <img src={Logo} alt="Mato Win Logo" className="logo-image" />
-        </a>
+    <div className='matowin_navbar'>
+      <div className='matowin_nav_icons'>
+        {isMenu ? <RxCross2 size={30} onClick={()=>setIsMenu(false)} color='#fff' />:
+        <IoMdMenu onClick={()=>setIsMenu(true)} size={30} color='#fff' />}
       </div>
-      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? <RxCross2 size={30} /> : <IoMdMenu size={30} />}
-      </div>
-      <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
+      <ul className={isMenu ? "nav_active":"nav_inactive"}>
         <li>
-          <a
-            href="#"
-            className={activeLink === "home" ? "active red-text" : ""}
-            onClick={() => handleLinkClick("home")}
-          >
-            Home
-          </a>
+            <a href='#home'>Home</a>
         </li>
         <li>
-          <a
-            href="#infra"
-            className={activeLink === "our-shop" ? "active red-text" : ""}
-            onClick={() => handleLinkClick("our-shop")}
-          >
-            Our Shop
-          </a>
+            <a href='#about'>About</a>
         </li>
         <li>
-          <a
-            href="#product"
-            className={activeLink === "product-details" ? "active red-text" : ""}
-            onClick={() => handleLinkClick("product-details")}
-          >
-            Product Details
-          </a>
+            <a href='#products'>Products</a>
         </li>
         <li>
-          <a
-            href="#"
-            className={activeLink === "contact-us" ? "active red-text signin-btn" : "signin-btn"}
-            onClick={() => handleLinkClick("contact-us")}
-          >
-            Contact Us
-          </a>
+            <a href='#services'>Services</a>
         </li>
+        {/* <li>
+            <a href='#contact'>Contact Us</a>
+        </li> */}
       </ul>
-    </nav>
-  );
-};
+    </div>
+  )
+}
 
-export default Navbar;
+export default Navbar
