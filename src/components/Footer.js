@@ -32,11 +32,15 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-right">
-          <div className="footer-card">
-            <MdOutlineMailOutline/> <span>dribbble.com/example</span>
+          <div className='parent-footer-card'>
+            <div className="footer-card">
+              <MdOutlineMailOutline/> <span>dribbble.com/example</span>
+            </div>
           </div>
-          <div className="footer-card">
-          <MdOutlineMailOutline/> <span>contact@example.com</span>
+          <div className='parent-footer-card'>
+            <div className="footer-card">
+              <MdOutlineMailOutline/> <span>contact@example.com</span>
+            </div>
           </div>
         </div>
       </div>
