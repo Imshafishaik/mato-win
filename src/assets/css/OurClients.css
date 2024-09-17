@@ -3,7 +3,6 @@
     width: 80vw;
     border-radius: 8px;
     position: absolute;
-    top: -17px;
 }
 
 .matowin_infra h1{
@@ -27,6 +26,10 @@
     border-radius: 8px;
 }
 
+.client_img p {
+    color: #fff;
+}
+
 .client_list{
     display: flex;
 }
@@ -34,6 +37,7 @@
 .client_lists{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 15px;
 }
 
 @media screen and (max-width:800px) {

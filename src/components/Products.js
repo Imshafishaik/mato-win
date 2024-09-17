@@ -1,19 +1,12 @@
 import React from 'react';
 import "../assets/css/Products.css";
-import matowinlogo from "../assets/images/matowinlogo.jpeg";
-import Product1 from "../assets/images/product1.jpeg";
-import Product2 from "../assets/images/product2.jpeg";
-import Product3 from "../assets/images/product3.jpeg";
-import Product4 from "../assets/images/product4.jpeg";
-import Product5 from "../assets/images/product5.jpeg";
-import Product6 from "../assets/images/product6.jpeg";
-import Product7 from "../assets/images/product7.jpeg";
-import Product8 from "../assets/images/np1.jpeg";
-import Product9 from "../assets/images/np2.jpeg";
-import Product10 from "../assets/images/np3.jpeg";
-import Product11 from "../assets/images/np4.jpeg";
-import Product12 from "../assets/images/np5.jpeg";
-import Product13 from "../assets/images/np6.jpeg";
+import Product1 from "../assets/images/product1.png";
+import Product2 from "../assets/images/product2.png";
+import Product3 from "../assets/images/product3.png";
+import Product4 from "../assets/images/product4.png";
+import Product5 from "../assets/images/product5.png";
+import Product6 from "../assets/images/product6.png";
+import Product7 from "../assets/images/product7.png";
 const Products = () => {
     let products = [
         {
@@ -51,31 +44,6 @@ const Products = () => {
         description: 'Product 1 Description',
         image: Product7
     },
-    {
-        name: 'Product 1',
-        description: 'Product 1 Description',
-        image: Product8
-    },
-    {
-        name: 'Product 1',
-        description: 'Product 1 Description',
-        image: Product9
-    },
-    {
-        name: 'Product 1',
-        description: 'Product 1 Description',
-        image: Product10
-    },
-    {
-        name: 'Product 1',
-        description: 'Product 1 Description',
-        image: Product11
-    },
-    {
-        name: 'Product 1',
-        description: 'Product 1 Description',
-        image: Product12
-    }
 
     ]
   return (
