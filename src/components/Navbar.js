@@ -2,9 +2,16 @@ import React, { useState } from 'react';
 import "../assets/css/Navbar.css";
 import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const [isMenu,setIsMenu] = useState(false);
+
+    const navigate = useNavigate()
+
+    const handleContactUs = () => {
+      navigate('/contact')
+    }
   return (
     <div className='matowin_navbar'>
       <div className='matowin_nav_icons'>
@@ -16,13 +23,16 @@ const Navbar = () => {
             <a href='#home'>Home</a>
         </li>
         <li>
-            <a href='#about'>About</a>
+            <a href='#infra'>Our Infrastructure</a>
+        </li>
+        <li>
+            <a href='#machinery'>Our Machinery</a>
         </li>
         <li>
             <a href='#products'>Products</a>
         </li>
         <li>
-            <a href='#services'>Services</a>
+            <button type='button' onClick={()=>handleContactUs()}>Contact Us</button>
         </li>
         {/* <li>
             <a href='#contact'>Contact Us</a>

@@ -1,1 +1,24 @@
 
+.header_home_blk{
+    background-color: #0052aa;
+    border-radius: 0 0 150px 150px;
+}
+
+
+.our_infra{
+    display: flex;
+    justify-content: center;
+    margin: -48px 0 0 0;
+    padding: 0 0 150px 0;
+    position: relative;
+  }
+
+  .list_machinery img{
+    width: 100%;
+  }
+  
+  @media screen and (max-width:768px) {
+    .our_infra{
+      padding: 0 0 80px 0;
+    }
+  }

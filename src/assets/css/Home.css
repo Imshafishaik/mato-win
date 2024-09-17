@@ -2,15 +2,11 @@
 
 .matowin_home{
     padding: 0 50px;
-    background: #007bff;
-    height: 80vh;
-    /* background-repeat: no-repeat; */
-    /* width: 100vw; */
-    position: relative;
-    top: 100px;
+    /* background: #0052aa; */
+	background-image: url('https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg');
+    height: 90vh;
     opacity: 1;
-    /* backdrop-filter: ; */
-    /* filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg ); */
+	border-radius: 0 0 150px 150px;
 }
 
 .matowin_home h1{
@@ -107,5 +103,6 @@
 
     .matowin_home{
         padding: 0 20px;
+		height: 95vh;
     }
 }
