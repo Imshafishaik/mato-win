@@ -20,6 +20,13 @@
     border-radius: 8px;
 }
 
+.mission_content_train{
+    display: flex;
+    background-color: #fff;
+    width: 60%;
+    border-radius: 8px;
+}
+
 .mission_divider{
     height: 200px;
     width: 4px;
@@ -46,7 +53,7 @@
     justify-content: center;
 }
 
-.mission_content img{
+.mission_content_train img{
     width: 100%;
     height: 200px;
     border-top-left-radius: 8px;

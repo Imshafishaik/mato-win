@@ -6,7 +6,7 @@ const Training = () => {
     <div className='mato_mission'>
         <h1>Our Training</h1>
         <div className='mission_content_wrapper'>
-        <div className='mission_content'>
+        <div className='mission_content_train'>
             <div className='mission_content1'>
                 <h2>Deliver High-Quality Work:</h2>
                 <p>Commit to providing work
