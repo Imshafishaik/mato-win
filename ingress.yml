@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-learning
+spec:
+  rules:
+  - host: "foos.bar.com"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/bars"
+        backend:
+          service:
+            name: learing-kubenetes-deployment
+            port:
+              number: 80
